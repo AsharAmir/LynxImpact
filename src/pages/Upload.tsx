@@ -69,8 +69,8 @@ const Upload = () => {
 
       const endpoint =
         enhancementType === "exterior"
-          ? "http://localhost:5000/api/enhanceExterior"
-          : "http://localhost:5000/api/enhanceInterior";
+          ? "https://lynximpact-production.up.railway.app/api/enhanceExterior"
+          : "https://lynximpact-production.up.railway.app/api/enhanceInterior";
 
       const response = await axios.post(endpoint, formData, {
         headers: {
